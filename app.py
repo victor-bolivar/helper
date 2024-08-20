@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from utils import *
-from .modules.openstack_provider import OpenstackProvider
+from modules.openstack_provider import OpenstackProvider
 from pprint import pprint
 import sys
 
@@ -53,8 +53,8 @@ def create_infra():
     if infra['type'] == "openstack":
         driver = OpenstackProvider()
 
-    driver.generate_tf_file()
-    driver.create_tf_infra()
+    driver.generate_tf_file(infra)
+    driver.create_tf_infra(dest_folder)
 
 def update_infra():
     # Select the existing infra to update
