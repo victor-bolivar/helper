@@ -18,7 +18,6 @@ Within the root folder of the project you should have:
                 "flavorId": "8dab5489-9db9-4873-9228-63f001e984fc",
                 "securityGroups": ["default"],
                 "keypair": "victor",
-                "roles": ["etcd", "control", "worker"],
                 "networkIds": ["55779fbd-d0b6-4cb6-a206-5323256abeab"]
             }
         ]
